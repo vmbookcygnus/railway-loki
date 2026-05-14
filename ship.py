@@ -5,7 +5,7 @@ log_group = os.environ["LOG_GROUP"]
 loki_url = os.environ["LOKI_URL"]
 
 client = boto3.client("logs", region_name=aws_region)
-start_time = int((time.time() - 3600) * 1000)
+start_time = 0
 
 while True:
     try:
